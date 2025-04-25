@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".todolist.FoodSelectionDialogFragment">
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search food..."
+        android:drawableStart="@android:drawable/ic_menu_search"/>
+
+    <!-- Category Filter -->
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Calorie Filter -->
+    <SeekBar
+        android:id="@+id/seekBarCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="500"/>
+
+    <TextView
+        android:id="@+id/textCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories: 0 - 500"/>
+
+    <!-- Food List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFoodList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

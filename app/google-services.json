@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "41100684081",
+    "project_id": "dietgamification",
+    "storage_bucket": "dietgamification.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41100684081:android:c3ef4c7ec709fbefcc5e10",
+        "android_client_info": {
+          "package_name": "com.example.diet_gamification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU4FdshqNvQ77zUeWafF85HBKM8LJfybI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

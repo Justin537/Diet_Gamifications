@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/reportTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weekly Progress"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- EXP Summary -->
+    <TextView
+        android:id="@+id/expSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total EXP Gained This Week: 0"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Calories Summary -->
+    <TextView
+        android:id="@+id/caloriesSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Average Calories This Week: 0 kcal"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bar Chart Placeholder -->
+    <FrameLayout
+        android:id="@+id/barChartContainer"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E0E0E0" />
+
+    <!-- Button to switch data view -->
+    <Button
+        android:id="@+id/switchDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Switch to Calories View" />
+
+</LinearLayout>

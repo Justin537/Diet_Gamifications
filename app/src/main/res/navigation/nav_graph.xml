@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/toDoListFragment">
+
+    <!-- ToDoList Fragment -->
+    <fragment
+        android:id="@+id/toDoListFragment"
+        android:name="com.example.diet_gamification.todolist.ToDoListFragment"
+        android:label="ToDo List"
+        tools:layout="@layout/fragment_todolist">
+
+        <!-- Add Food Dialog -->
+        <action
+            android:id="@+id/action_toDoListFragment_to_addFoodDialog"
+            app:destination="@id/addFoodDialog" />
+    </fragment>
+
+    <!-- Add Food Dialog -->
+    <dialog
+        android:id="@+id/addFoodDialog"
+        android:name="com.example.diet_gamification.todolist.AddFoodDialog"
+        android:label="Add Food"
+        tools:layout="@layout/dialog_add_food" />
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.diet_gamification.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+
+        <!-- Actions for navigation -->
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_bmiCalculatorFragment"
+            app:destination="@id/bmiCalculatorFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+
+        <action
+            android:id="@+id/action_profile_to_updateProfileFragment"
+            app:destination="@id/action_profile_to_updateProfileFragment" />
+    </fragment>
+
+    <!-- BMI Calculator Fragment -->
+    <fragment
+        android:id="@+id/bmiCalculatorFragment"
+        android:name="com.example.diet_gamification.profile.BMICalculatorFragment"
+        android:label="BMI Calculator"
+        tools:layout="@layout/fragment_bmi_calculator" />
+
+    <!-- Login Fragment -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.diet_gamification.profile.LoginFragment"
+        android:label="Login/Register"
+        tools:layout="@layout/fragment_login" />
+
+    <!-- Shop Fragment -->
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.diet_gamification.profile.ShopFragment"
+        android:label="Shop"
+        tools:layout="@layout/fragment_shop" />
+</navigation>

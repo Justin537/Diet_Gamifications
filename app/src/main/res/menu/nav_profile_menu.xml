@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_login"
+
+        android:icon="@drawable/ic_add"
+        android:title="Login/Register" />
+    <item
+        android:id="@+id/nav_bmi_calculator"
+        android:icon="@drawable/ic_add"
+        android:title="BMI Calculator" />
+    <item
+        android:id="@+id/nav_shop"
+        android:icon="@drawable/ic_add"
+        android:title="Shop" />
+</menu>
+
+    <!--android:icon="@drawable/ic_login"-->
+    <!--android:icon="@drawable/ic_bmi"-->
+    <!--android:icon="@drawable/ic_shop"-->
